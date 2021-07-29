@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="384.88287"
+   viewBox="0 0 507.99998 101.8336"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="/home/hrq/hidraumon/public/images/bg1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="bg1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="1080px"
+     inkscape:zoom="0.44535922"
+     inkscape:cx="813.94969"
+     inkscape:cy="92.060517"
+     inkscape:window-width="1892"
+     inkscape:window-height="1021"
+     inkscape:window-x="14"
+     inkscape:window-y="14"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.615e-6,-183.91641)">
+    <path
+       fill="#f2f2f2"
+       fill-opacity="1"
+       d="M -1.615e-6,266.94897 28.222221,268.823 c 28.222222,2.01545 84.666659,5.55133 141.111109,1.90938 56.44444,-3.78341 112.88889,-15.09824 169.33333,-26.41309 56.44445,-11.31485 112.8889,-22.62969 141.1111,-28.28711 L 508,210.37476 v 101.83359 h -28.22224 c -28.2222,0 -84.66665,0 -141.1111,0 -56.44444,0 -112.88889,0 -169.33333,0 -56.44445,0 -112.888887,0 -141.111109,0 H -1.615e-6 Z"
+       id="path1309"
+       style="fill:#15191d;fill-opacity:1;stroke-width:0.353182" />
+  </g>
+</svg>
