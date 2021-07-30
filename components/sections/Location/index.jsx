@@ -1,50 +1,98 @@
 import { Col, Row, Form, Button, Container } from "react-bootstrap";
 import Map from "../Map";
+import { useState } from "react";
 import UberButton from "../../UI/UberButton";
 import WazeButton from "../../UI/WazeButton";
 import { ImPhone, ImMap, ImClock2 } from "react-icons/im";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaCalendarCheck } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+import Modal from "../../UI/Modal";
+import Backdrop from "../../UI/Backdrop";
 
 export default function Location() {
+  const [modalIsOpen, setModal] = useState(false);
+
+  function openModal() {
+    setModal(true);
+  }
+
+  function closeModal() {
+    setModal(false);
+  }
+
   return (
     <section id="location">
-      <Container className="py-5 mb-5">
-        <Row className="my-3">
+      <Container>
+        <Row className="pt-5">
           <Col lg={6} md={12} sm={12} xs={12} className="mb-5">
-            <h2>
+            <h2 data-aos="fade-down">
               Entre
               <br />
               <strong>em contato</strong>
               <div className="after"></div>
             </h2>
+            <div className="my-5">
+              <p data-aos="fade-down" data-aos-delay="300">
+                Possui <em>dúvidas</em>, <em>pedidos</em> ou <em>orçamentos</em>
+                ? Nós da <strong>Hidraumon</strong> estamos empenhados em
+                responder quaisquer dúvidas e atender quaisquer necessidades!
+                <br />
+                <br />
+                Estamos ansiosos em ouví-lo! Preencha o formulário e
+                retornaremos o mais rápido possível. Ou, se preferir, veja
+                nossos pontos de contato ou
+                  <span id="agende">agende um horário</span>
+                {modalIsOpen && (
+                  <Modal
+                    onCancel={closeModal}
+                    onConfirm={closeModal}
+                    content="test"
+                  />
+                )}
+                {modalIsOpen && <Backdrop onCancel={closeModal} />}
+                para uma visita ou ligação!
+              </p>
+            </div>
             <ul>
-              <li>
+              <li data-aos="fade-down" data-aos-delay="500">
                 <ImPhone /> <a href="tel:+551732269090">(17) 3226-9090</a>
               </li>
-              <li>
+              <li data-aos="fade-down" data-aos-delay="550">
                 <IoLogoWhatsapp />
                 <a href="https://wa.me/5517982010001" target="_blank">
                   (17) 98201-0001
                 </a>
               </li>
-              <li>
-                <ImMap /> Rua Gino Cecconi nº 261, Distrito Industrial Dr. Carlos Arnaldo e Silva
+              <li data-aos="fade-down" data-aos-delay="600">
+                <ImMap /> Rua Gino Cecconi nº 261, Distrito Industrial Dr.
+                Carlos Arnaldo e Silva
                 <br />
                 São José do Rio Preto, SP, Brasil, CEP: 15052-725
               </li>
-              <li>
+              <li data-aos="fade-down" data-aos-delay="650">
                 <ImClock2 /> Segunda à Sexta: 7h30 às 17h30
                 <br />
                 Sábados, Domingos e Feriados: Fechado
               </li>
-              <li>
-                <FaCalendarCheck /> Agendar um horário (visita ou chamada)
+              <li data-aos="fade-down" data-aos-delay="700">
+                <FaCalendarCheck />
+                <button className="button-modal" onClick={openModal}>
+    Agendar um horário (visita ou ligação)
+                </button>
+
               </li>
             </ul>
           </Col>
-          <Col lg={6} md={12} sm={12} xs={12} className="mb-5">
+          <Col
+            lg={6}
+            md={12}
+            sm={12}
+            xs={12}
+            className="mb-5"
+            data-aos="fade-down"
+            data-aos-delay="800"
+          >
             <Form>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridName">
@@ -86,7 +134,7 @@ export default function Location() {
                 <Form.Control
                   as="textarea"
                   placeholder="Digite sua mensagem..."
-                  rows={12}
+                  rows={18}
                 />
               </Form.Group>
 
@@ -96,11 +144,17 @@ export default function Location() {
             </Form>
           </Col>
         </Row>
-        <Row>
+        <Row className="mb-5">
           <Col lg={12} md={12} sm={12} xs={12}>
-            <Map />
-            <UberButton url="https://m.uber.com/ul/?action=setPickup&client_id=f_Q9JtAf_s2t6zqjGoqnQ3e53t9adhNI&pickup=my_location&dropoff[formatted_address]=Hidraumon%20Industrias%20de%20Maquinas%20EPP.%20-%20Rua%20Gino%20Cecconi%20-%20Distrito%20Industrial%20Doutor%20Carlos%20Arnaldo%20e%20Silva%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20SP%2C%20Brasil&dropoff[latitude]=-20.729855&dropoff[longitude]=-49.342562" />
-            <WazeButton url="https://waze.com/ul?ll=-20.8127115,-49.376521&navigate=yes" />
+            <section id="map">
+              <Map />
+              <Row className="my-3">
+                <div className="navigation-buttons">
+                  <UberButton url="https://m.uber.com/ul/?action=setPickup&client_id=f_Q9JtAf_s2t6zqjGoqnQ3e53t9adhNI&pickup=my_location&dropoff[formatted_address]=Hidraumon%20Industrias%20de%20Maquinas%20EPP.%20-%20Rua%20Gino%20Cecconi%20-%20Distrito%20Industrial%20Doutor%20Carlos%20Arnaldo%20e%20Silva%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20SP%2C%20Brasil&dropoff[latitude]=-20.729855&dropoff[longitude]=-49.342562" />
+                  <WazeButton url="https://waze.com/ul?ll=-20.8127115,-49.376521&navigate=yes" />
+                </div>
+              </Row>
+            </section>
           </Col>
         </Row>
       </Container>

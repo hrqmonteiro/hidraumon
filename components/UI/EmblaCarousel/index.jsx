@@ -18,7 +18,7 @@ export default class EmblaCarousel extends Component {
       <Container>
         <Row className="m-0 p=0">
           <Col lg={12} md={12} sm={12} xs={12} className="p-0 m-0">
-            <div className="embla-slide">
+            <div className="embla-slide" data-aos="fade-down" data-aos-delay="700">
               <Slider {...settings}>
                 <div className="card-1">
                   <Card1 title="Industrial" description="Lorem Ipsum" />

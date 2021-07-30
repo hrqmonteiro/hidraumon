@@ -30,7 +30,7 @@ export default function Menu() {
               </Link>
             </li>
             <li className="underline">
-              <Link href="/localizacao">
+              <Link href="/#map">
                 <a>Localização</a>
               </Link>
             </li>
@@ -50,7 +50,7 @@ export default function Menu() {
             <br />
             <span id="phone-number">(17) 3226-9090</span>
           </div>
-          <Button url="/" text="Solicitar Orçamento" />
+          <Button url="/contato" text="Solicitar Orçamento" />
         </div>
         <div id="offcanvas">
           <OffCanvas />

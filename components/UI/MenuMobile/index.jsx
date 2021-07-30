@@ -25,7 +25,7 @@ export default function MenuMobile() {
                 </Link>
               </li>
               <li className="underline">
-                <Link href="/localizacao">
+                <Link href="/#map">
                   <a>Localização</a>
                 </Link>
               </li>
@@ -50,7 +50,9 @@ export default function MenuMobile() {
           </div>
         </Col>
         <Col lg={12} md={12} sm={12} xs={12}>
-          <button>Solicitar Orçamento</button>
+          <a href="/contato">
+            <button>Solicitar Orçamento</button>
+          </a>
         </Col>
       </Row>
     </div>

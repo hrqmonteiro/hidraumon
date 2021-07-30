@@ -5,17 +5,17 @@ export default function SocialLinks() {
     <>
       <div id="social-links">
         <ul>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="700">
             <a href="https://www.facebook.com/hidraumon.ind" target="_blank">
               <RiFacebookFill />
             </a>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="750">
             <a href="https://www.instagram.com/hidraumon/" target="_blank">
               <RiInstagramLine />
             </a>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="800">
             <a href="https://www.linkedin.com/in/hidraumon-maquinas-hidraulicas-3a862298/" target="_blank"><RiLinkedinFill /></a>
           </li>
           <li>
