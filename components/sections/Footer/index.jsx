@@ -8,7 +8,7 @@ export default function Footer() {
       <section id="footer">
         <Container className="p-5">
           <Row>
-            <Col lg={4} md={12} sm={12} xs={12} className="py-3">
+            <Col lg={6} md={12} sm={12} xs={12} className="py-3">
               <img
                 src="/images/logo.png"
                 className="img-fluid mb-3"
@@ -47,29 +47,7 @@ export default function Footer() {
                 <SocialLinks />
               </div>
             </Col>
-            <Col lg={4} md={6} sm={6} xs={6} className="py-3">
-              <h6 className="mb-4" data-aos="fade-down" data-aos-delay="850">
-                <strong>Institucional</strong>
-              </h6>
-              <ul>
-                <li data-aos="fade-down" data-aos-delay="900">
-                  <a href="/">Página Inicial</a>
-                </li>
-                <li data-aos="fade-down" data-aos-delay="950">
-                  <a href="/sobre">Sobre</a>
-                </li>
-                <li data-aos="fade-down" data-aos-delay="1000">
-                  <a href="#">Catálogo</a>
-                </li>
-                <li data-aos="fade-down" data-aos-delay="1500">
-                  <a href="#">Localização</a>
-                </li>
-                <li data-aos="fade-down" data-aos-delay="2000">
-                  <a href="#">Contato</a>
-                </li>
-              </ul>
-            </Col>
-            <Col lg={4} md={6} sm={6} xs={6} className="py-3">
+            <Col lg={6} md={6} sm={6} xs={6} className="py-3">
               <h6 className="mb-4" data-aos="fade-down" data-aos-delay="850">
                 <strong>Institucional</strong>
               </h6>

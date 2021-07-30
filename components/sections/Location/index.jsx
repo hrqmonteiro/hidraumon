@@ -41,8 +41,8 @@ export default function Location() {
                 <br />
                 Estamos ansiosos em ouví-lo! Preencha o formulário e
                 retornaremos o mais rápido possível. Ou, se preferir, veja
-                nossos pontos de contato ou
-                  <span id="agende">agende um horário</span>
+                nossos pontos de contato ou agende um horário para uma visita ou
+                ligação!
                 {modalIsOpen && (
                   <Modal
                     onCancel={closeModal}
@@ -51,7 +51,6 @@ export default function Location() {
                   />
                 )}
                 {modalIsOpen && <Backdrop onCancel={closeModal} />}
-                para uma visita ou ligação!
               </p>
             </div>
             <ul>
@@ -78,9 +77,8 @@ export default function Location() {
               <li data-aos="fade-down" data-aos-delay="700">
                 <FaCalendarCheck />
                 <button className="button-modal" onClick={openModal}>
-    Agendar um horário (visita ou ligação)
+                  Agendar um horário (visita ou ligação)
                 </button>
-
               </li>
             </ul>
           </Col>
