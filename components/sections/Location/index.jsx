@@ -25,15 +25,14 @@ export default function Location() {
     <section id="location">
       <Container>
         <Row className="pt-5">
-          <Col lg={6} md={12} sm={12} xs={12} className="mb-5">
-            <h2 data-aos="fade-down">
+          <Col lg={6} md={12} sm={12} xs={12} className="mb-5" data-aos="fade-right">
+            <h2>
               Entre
               <br />
               <strong>em contato</strong>
-              <div className="after"></div>
             </h2>
             <div className="my-5">
-              <p data-aos="fade-down" data-aos-delay="300">
+              <p>
                 Possui <em>dúvidas</em>, <em>pedidos</em> ou <em>orçamentos</em>
                 ? Nós da <strong>Hidraumon</strong> estamos empenhados em
                 responder quaisquer dúvidas e atender quaisquer necessidades!
@@ -54,27 +53,27 @@ export default function Location() {
               </p>
             </div>
             <ul>
-              <li data-aos="fade-down" data-aos-delay="500">
+              <li>
                 <ImPhone /> <a href="tel:+551732269090">(17) 3226-9090</a>
               </li>
-              <li data-aos="fade-down" data-aos-delay="550">
+              <li>
                 <IoLogoWhatsapp />
                 <a href="https://wa.me/5517982010001" target="_blank">
                   (17) 98201-0001
                 </a>
               </li>
-              <li data-aos="fade-down" data-aos-delay="600">
+              <li>
                 <ImMap /> Rua Gino Cecconi nº 261, Distrito Industrial Dr.
                 Carlos Arnaldo e Silva
                 <br />
                 São José do Rio Preto, SP, Brasil, CEP: 15052-725
               </li>
-              <li data-aos="fade-down" data-aos-delay="650">
+              <li>
                 <ImClock2 /> Segunda à Sexta: 7h30 às 17h30
                 <br />
                 Sábados, Domingos e Feriados: Fechado
               </li>
-              <li data-aos="fade-down" data-aos-delay="700">
+              <li>
                 <FaCalendarCheck />
                 <button className="button-modal" onClick={openModal}>
                   Agendar um horário (visita ou ligação)
@@ -88,8 +87,7 @@ export default function Location() {
             sm={12}
             xs={12}
             className="mb-5"
-            data-aos="fade-down"
-            data-aos-delay="800"
+            data-aos="fade-left"
           >
             <Form>
               <Row className="mb-3">

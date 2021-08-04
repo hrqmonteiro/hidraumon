@@ -13,7 +13,7 @@ export default function Sobre() {
 
       <section id="about">
         <Container>
-          <Row>
+          <Row data-aos="fade-right">
             <Col lg={6} md={12} sm={12} xs={12} className="mt-6">
               <Row>
                 <Col lg={12} md={12} sm={12} xs={12} className="mb-5">
@@ -24,11 +24,11 @@ export default function Sobre() {
                 </Col>
               </Row>
             </Col>
-            <Col lg={6} md={12} sm={12} xs={12} id="header-about">
-              <h1 className="mb-4" data-aos="fade-down">
+            <Col lg={6} md={12} sm={12} xs={12} id="header-about" data-aos="fade-left" data-aos-delay="200">
+              <h1 className="mb-4">
                 Nossa <strong>história</strong>
               </h1>
-              <p data-aos="fade-down" data-aos-delay="250">
+              <p>
                 A <strong>HIDRAUMON</strong> foi criada em 1995 e desde então
                 estamos focados no desenvolvimento de nossos produtos para
                 atender nossos clientes cada vez melhor.

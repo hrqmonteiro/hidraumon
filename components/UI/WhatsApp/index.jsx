@@ -1,5 +1,6 @@
 import { ImWhatsapp, ImPhone } from "react-icons/im";
 import { RiQuestionAnswerLine, RiHeadphoneFill } from "react-icons/ri";
+import { CgClose } from "react-icons/cg";
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
@@ -24,14 +25,25 @@ export default function WhatsApp() {
       )}
 
       <div id="whatsapp">
-        <button
-          onClick={() => {
-            setShow(!show);
-            setDuvidas(!duvidas);
-          }}
-        >
-          <ImWhatsapp />
-        </button>
+        {show ? (
+          <button
+            onClick={() => {
+              setShow(!show);
+              setDuvidas(!duvidas);
+            }}
+          >
+            <CgClose />
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              setShow(!show);
+              setDuvidas(!duvidas);
+            }}
+          >
+            <ImWhatsapp />
+          </button>
+        )}
       </div>
       {show && (
         <>
@@ -44,8 +56,9 @@ export default function WhatsApp() {
                 Olá, seja <strong>bem-vindo!</strong>
               </h5>
               <p>
-                Para <em>dúvidas</em>, <em>informações</em>, <em>orçamentos</em> etc, selecione uma das opções
-                abaixo para iniciar um atendimento com nossa equipe!
+                Para <em>dúvidas</em>, <em>informações</em>, <em>orçamentos</em>{" "}
+                etc, selecione uma das opções abaixo para iniciar um atendimento
+                com nossa equipe!
               </p>
             </div>
           </div>
@@ -59,7 +72,10 @@ export default function WhatsApp() {
                 <img src="/images/faby.png" alt="Fabiana - Vendas" />
               </div>
               <div>
-                <strong>Fabiana </strong> <span id="status">Online <RiHeadphoneFill /></span>
+                <strong>Fabiana </strong>{" "}
+                <span id="status">
+                  Online <RiHeadphoneFill />
+                </span>
                 <br />
                 <p>Setor de Vendas</p>
               </div>

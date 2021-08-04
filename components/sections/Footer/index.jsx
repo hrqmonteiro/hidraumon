@@ -14,20 +14,17 @@ export default function Footer() {
                 className="img-fluid mb-3"
                 width="120px"
                 alt="Hidraumon Máquinas"
-                data-aos="fade-down"
               />
               <br />
               <p
                 id="footer-institutional"
                 className="py-3"
-                data-aos="fade-down"
-                data-aos-delay="500"
               >
                 Hidraumon Ind. de Máquinas Eireli
                 <br />
                 CNPJ: <em>27.415.438/0001-97</em>
               </p>
-              <p data-aos="fade-down" data-aos-delay="550">
+              <p>
                 Rua Gino Cecconi Nº 261,
                 <br />
                 Distrito Industrial Dr. Carlos Arnaldo e Silva
@@ -35,7 +32,7 @@ export default function Footer() {
                 CEP: 15052-725
                 <br />
                 <div className="mt-3">
-                  <p id="footer-mail" data-aos="fade-down" data-aos-delay="600">
+                  <p id="footer-mail">
                     <a href="mailto:hidraumon@hidraumon.com.br">
                       hidraumon@hidraumon.com.br
                     </a>
@@ -48,23 +45,23 @@ export default function Footer() {
               </div>
             </Col>
             <Col lg={6} md={6} sm={6} xs={6} className="py-3">
-              <h6 className="mb-4" data-aos="fade-down" data-aos-delay="850">
+              <h6 className="mb-4">
                 <strong>Institucional</strong>
               </h6>
               <ul>
-                <li data-aos="fade-down" data-aos-delay="900">
+                <li>
                   <a href="/">Página Inicial</a>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="950">
+                <li>
                   <a href="/sobre">Sobre</a>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="1000">
+                <li>
                   <a href="#">Catálogo</a>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="1500">
+                <li>
                   <a href="#">Localização</a>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="2000">
+                <li>
                   <a href="#">Contato</a>
                 </li>
               </ul>
@@ -79,7 +76,7 @@ export default function Footer() {
                 src="/images/hm.svg"
                 title="Layout e Desenvolvimento por: Henrique Monteiro"
                 width="80px"
-                className="img-fluid" data-aos="fade-down"
+                className="img-fluid"
               />
             </a>
           </div>
@@ -87,13 +84,13 @@ export default function Footer() {
         </div>
         <div className="footer-credits-2">
           <div>
-            <p data-aos="fade-down" data-aos-delay="100">
+            <p>
               Copyright © 2021 <span id="hidr">Hidraumon Máquinas</span> - Todos
               os Direitos Reservados.
             </p>
           </div>
           <div>
-            <p data-aos="fade-down" data-aos-delay="200">
+            <p>
               Desenvolvido por:{" "}
               <span id="hidr">
                 <a href="https://instagram.com/hrqmonteiro" target="_blank">

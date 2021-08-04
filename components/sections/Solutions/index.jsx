@@ -7,30 +7,35 @@ export default function Solutions() {
   return (
     <section id="solutions">
       <Container>
+        <Row className="py-5 mb-5">
+          <EmblaCarousel />
+        </Row>
         <Row className="my-3 mb-2">
           <Col lg={3} md={3} sm={12} xs={12} className="mt-3">
-            <h2 className="mb-5" data-aos="fade-down" data-aos-delay="900">
+            <h2 className="mb-5" data-aos="fade-up">
               Nossas soluções
               <br />
               <strong>são definitivas!</strong>
             </h2>
-            <p data-aos="fade-down" data-aos-delay="1100">
-              Atuamos há mais de 25 anos no mercado e somos líderes no ramo de
-              equipamentos hidráulicos.
-            </p>
-            <p data-aos="fade-down" data-aos-delay="1300">
-              Estamos qualificados para te fornecer equipamentos hidráulicos em
-              alta qualidade, desde o material utilizado até o uso final.
-            </p>
-            <div className="my-5">
+            <div data-aos="fade-up" data-aos-delay="200">
+              <p>
+                Atuamos há mais de 25 anos no mercado e somos líderes no ramo de
+                equipamentos hidráulicos.
+              </p>
+              <p>
+                Estamos qualificados para te fornecer equipamentos hidráulicos
+                em alta qualidade, desde o material utilizado até o uso final.
+              </p>
+            </div>
+            <div className="my-5" data-aos="fade-up" data-aos-delay="200">
               <a href="/catalogo">
-                <button className="button-secondary" data-aos="fade-down" data-aos-delay="1500">
+                <button className="button-secondary">
                   Veja nosso catálogo! <MdKeyboardArrowRight />
                 </button>
               </a>
             </div>
           </Col>
-          <Col lg={3} md={3} sm={12} xs={12} className="my-3" data-aos="fade-down" data-aos-delay="2000">
+          <Col lg={3} md={3} sm={12} xs={12} className="my-3" data-aos="fade-up" data-aos-delay="500">
             <Card>
               <Card.Img variant="top" src="/hidr.png" />
               <Card.Body>
@@ -42,7 +47,7 @@ export default function Solutions() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={3} md={3} sm={12} xs={12} className="my-3" data-aos="fade-down" data-aos-delay="2200">
+          <Col lg={3} md={3} sm={12} xs={12} className="my-3" data-aos="fade-up" data-aos-delay="600">
             <Card>
               <Card.Img variant="top" src="/hidr.png" />
               <Card.Body>
@@ -54,7 +59,7 @@ export default function Solutions() {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={3} md={3} sm={12} xs={12} className="my-3" data-aos="fade-down" data-aos-delay="2500">
+          <Col lg={3} md={3} sm={12} xs={12} className="my-3" data-aos="fade-up" data-aos-delay="700">
             <Card>
               <Card.Img variant="top" src="/hidr.png" />
               <Card.Body>
